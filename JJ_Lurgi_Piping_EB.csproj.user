@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{1F37CB63-53FE-464D-B0DC-9F18C71508FB}">
+        <ClientPlugInProject />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

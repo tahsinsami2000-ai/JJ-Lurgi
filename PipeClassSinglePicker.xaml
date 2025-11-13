@@ -1,0 +1,29 @@
+﻿<Window x:Class="JJ_Lurgi_Piping_EB.PipeClassSinglePicker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Select Pipe Class" Height="640" Width="1020"
+        WindowStartupLocation="CenterOwner" Background="#0B1220">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border CornerRadius="12" BorderBrush="#223251" BorderThickness="1" Padding="14" Background="#0B1220">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <TextBlock x:Name="TxtList"
+                   FontFamily="Consolas"
+                   Foreground="#C7D2FE"
+                   FontSize="15"
+                   TextWrapping="Wrap"/>
+            </ScrollViewer>
+        </Border>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <TextBlock Text="Enter your choice (1-N) or 'b' to go back:" Foreground="#93E6A8" FontFamily="Consolas" Margin="0,4,10,0"/>
+            <TextBox x:Name="TxtChoice" Width="180" Height="28" Margin="0,0,12,0"/>
+            <Button Content="OK" Width="90" Height="28" Click="Ok_Click" Margin="0,0,8,0"/>
+            <Button Content="Back" Width="90" Height="28" Click="Back_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
